@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my javascript</title>	
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	/*var x=10;
+	var y=12.34;
+	var sum;
+	sum=x+y;*/
+	//alert('sum= '+sum);
+	/*var name="raj";
+	var surname="gujrathi";
+	var  student=name+' '+surname;*/
+	//student name= raj gujrathi
+	//alert('student name ='+name+' '+surname);
+	//alert('student= '+student);
+
+	/*var x=23;
+	var y='34';
+	var z=y+x;
+	//alert('z= '+z);
+	alert("alebert Einstien,'bulb i  invented'");
+	alert('alebert Einstien,"bulb i  invented"');*/
+	function showUserName() {
+		var studentName=document.getElementById('userName').value;
+		//alert('Welcome '+studentName);
+		document.getElementById('headerName').innerHTML=studentName;
+		//console.log(studentName);
+	}
+
+//	showUserName();
+</script>
+</head>
+<body >
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1 id="headerName">Login Form</h1>
+			</div>
+			<div class="panel-body">
+				<div id="table">
+					<table class="table table-responsive table-striped table-condensed table-boredered">
+						<tr>
+							<td>
+								<label>
+									Name
+								</label>
+							</td>
+							<td>
+								<input type="text" class="form-control" name="userName" id="userName" value="">
+
+							</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="row">
+					<div  class="pull-right">
+						<input type="button" class="btn  btn-info btn-lg" name="" value="submit" onclick="showUserName()">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script>
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+</body>
+</html>
