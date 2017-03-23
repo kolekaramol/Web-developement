@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javacript Object</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var employee = {
+    firstName: "Raj",
+    lastName : "gujrathi",
+    skills:"html",
+    id       : 2342,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    },
+    position:function()
+    {
+    	if(this.skills=="html")
+    	{
+    		alert("webdeveloper");
+    	}
+    	else
+    	{
+    		alert('not developer');
+    	}
+    }
+};
+alert(employee.fullName());
+//alert(employee.position());
+alert(employee["firstName"]);
+</script>
+</body>
+</html>
