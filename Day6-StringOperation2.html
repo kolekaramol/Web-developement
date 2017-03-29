@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my javascript</title>	
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function replaceString() {
+		var txt=document.getElementById('string').value;
+		var strtoreplace=document.getElementById('strReplace').value;
+		var replaceBY=document.getElementById('strReplaceBy').value;
+		var result=txt.replace(new RegExp(strtoreplace, 'g'),replaceBY);// for global /Raj/g
+		alert(result);
+		document.getElementById('result').innerHTML=result;
+	}
+</script>
+</head>
+<body >
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1 id="headerName">String Operation</h1>
+			</div>
+			<div class="panel-body">
+				<div id="table">
+					<table class="table table-responsive table-striped table-condensed table-boredered">
+						<tr>
+							<td>
+								<label>
+									Enter String
+								</label>
+							</td>
+							<td>
+								<input type="text" class="form-control"  id="string" value="">
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									String to be replaced
+								</label>
+							</td>
+							<td>
+								<input type="text" class="form-control"  id="strReplace" value="">
+
+							</td>
+							<td>
+								<label>
+									String Replaced by
+								</label>
+							</td>
+							<td>
+								<input type="text" class="form-control"  id="strReplaceBy" value="">
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label>
+									Result
+								</label>
+							</td>
+							<td colspan="2">
+								<label>
+									<h1 id="result">
+										
+									</h1>
+								</label>
+							</td>
+							
+						</tr>
+						
+
+					</table>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="row">
+					<div  class="">
+						<input type="button"  class="btn btn-lg btn-success" value="Replace String" onclick="replaceString()" name="">
+			
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- //str length
+//str.indexOf
+//str.lastIndexOf
+//str.search
+//str.slice(indexStart,indexEnd)
+//str.substring
+//str.substr
+//str.replace("string to be replaced","string replaced")
+//str.toUpperCase
+//str.concat()
+//str.split(",")//"/" -->
+</body>
+</html>

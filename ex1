@@ -1,0 +1,11 @@
+//str length
+//str.indexOf
+//str.lastIndexOf
+//str.search
+//str.slice(indexStart,indexEnd)
+//str.substring
+//str.substr
+//str.replace("string to be replaced","string replaced")
+//str.toUpperCase
+//str.concat()
+//str.split(",")//"/"

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch case Example</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function choice(choiceOption)
+		{
+			switch(choiceOption)
+			{
+				case '1':
+					{
+						alert("choosen  option :Sunday");
+						document.getElementById('chosenDay').innerHTML="Choosen day is Sunday";
+						break;
+					}
+				case '2':
+				{
+					alert("choosen  option :Monday");
+					document.getElementById('chosenDay').innerHTML="Choosen day is Monday";
+					break;
+				}
+				case '3':
+					{
+
+						alert("choosen  option :Tuesday");
+						document.getElementById('chosenDay').innerHTML="Choosen day is Tuesday";
+						break;
+					}
+				case '4':
+				{
+					alert("choosen  option :Wednesday");
+					document.getElementById('chosenDay').innerHTML="Choosen day is Wednesday";
+					break;
+				}
+				case '5':
+					{
+						alert("choosen  option :Thursday");
+						document.getElementById('chosenDay').innerHTML="Choosen day is Thursday";
+						break;
+					}
+				case '6':
+				{
+					alert("choosen  option :Friday");
+					document.getElementById('chosenDay').innerHTML="Choosen day is Friday";
+					break;
+				}
+				case '7':
+				{
+					alert("choosen  option :Saturday");
+					document.getElementById('chosenDay').innerHTML="Choosen day is Saturday";
+					break;
+				}
+				default:
+				{
+					alert('wrong input');
+				}
+			}
+			
+		}
+	</script>
+</head>
+	
+<body>
+<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 id="chosenDay"> Days Of week</h1>
+		</div>
+		<div class="panel-body">
+			<div id="table">
+				<table class="table table-responsive table-bordered">
+					<tr>
+						<td>
+							<label>1</label>
+						</td>
+						<td>Sunday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>2</label>
+						</td>
+						<td>Monday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>3</label>
+						</td>
+						<td>Tuesday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>4</label>
+						</td>
+						<td>Wednesday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>5</label>
+						</td>
+						<td>Thursday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>6</label>
+						</td>
+						<td>Friday</td>
+					</tr>
+					<tr>
+						<td>
+							<label>7</label>
+						</td>
+						<td>Saturday</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<div class="row">
+				<div  class="pull-right">
+					<input type="form-control " value="" placeholder="enter ur  choice" onchange="choice(this.value)" name="">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
