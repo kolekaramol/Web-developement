@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>call back function example</title>
+	<script type="text/javascript">
+
+	function myskills(param1,param2,callback) {
+		alert("callback is going to call with my skills :"+param1+" "+param2);
+		callback(param1,param2);
+	}
+	var result=function()
+	{
+		alert("welcome");
+	}
+	myskills("html","javascript",function(a,b)
+	{
+		alert("a= "+a+" b="+b);
+	}
+	);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

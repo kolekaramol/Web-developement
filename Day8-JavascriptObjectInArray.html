@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Object Within Array</title>
+	<script type="text/javascript">
+	
+		var employees=[
+					{
+						firstName:"Raj",
+						lastName:"Gujrathi",
+						skills:['html','css','bootstrap'],
+						designation:"web designer"	,
+						salary:'121212',
+						annualSalary:function () {
+						 return this.salary*12;
+						},
+						employeeInfo:function()
+						{
+							return 'firstName :'+this.firstName+' lastName :'+this.lastName;
+						}
+					},
+					{
+						firstName:"Mangesh",
+						lastName:"",
+						skills:['php','angular','bootstrap'],
+						designation:"web developer"	,
+						salary:'121212',
+						annualSalary:function () {
+						 return this.salary*12;
+						},
+						employeeInfo:function()
+						{
+							return 'firstName :'+this.firstName+' lastName :'+this.lastName;
+						}
+					},
+					{
+						firstName:"vikram",
+						lastName:"",
+						skills:['php','angular','bootstrap'],
+						designation:"web developer"	,
+						salary:'121212',
+						annualSalary:function () {
+						 return this.salary*12;
+						},
+						employeeInfo:function()
+						{
+							return 'firstName :'+this.firstName+' lastName :'+this.lastName;
+						}
+					}
+					];
+		var employeeInfo=function()
+		{ 
+			var i=0;
+			while(i<employees.length)
+			{
+				alert(employees[i].firstName);
+				i++;
+			}
+	
+		}
+		employeeInfo();
+		for (var i = 0; i <=employees.length - 1; i++) {
+			alert(employees[i].firstName);
+			console.log(employees[i].employeeInfo());
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
