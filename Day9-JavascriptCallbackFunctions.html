@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Callback Functions</title>
+	<script type="text/javascript">
+		function myskill(param1,param2,callback)//callback=findDesignation
+		{
+			alert("Parameter 1 ="+param1 +" ,Parameter 2 = "+param2);
+			alert(callback());
+		}
+		var findDesignation=function()
+		{
+			return "webdesigner";
+		}
+		myskill("Html","css",findDesignation);// 1st call
+		myskill("raj","gujrathi",function findPosition() {
+			return "webdeveloper";
+		});//2 nd call
+		myskill("raj","gujrathi",function findSalary() {
+			return 23232233;
+		});//3rd call
+	</script>
+</head>
+<body>
+<!-- 
+param1=html
+param2=css
+callback=webdesiner
+findisgnation return webdesiner
+ -->
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript CallBack Functions</title>
+	<script type="text/javascript">
+		function myInfo(firstName,lastName,callback) {
+			//alert(firstName+" "+lastName);
+			callback(firstName,lastName); // x=abc y=xyz
+		}
+		
+		function callFront(x,y) {
+			alert(x+" "+y);
+		}
+
+		myInfo(123,12312,callFront);
+/*		function si(x,y) {
+			myInfo(x,y,callFront);
+		}
+*/	</script>
+</head>
+<body>
+
+</body>
+</html>
